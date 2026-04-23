@@ -1,0 +1,379 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "game": "Dune: Arrakis Dominion Distributed",
+    "description": "Base de conocimiento del universo Dune para integración de chatbot",
+    "language": "es",
+    "canon": "Frank Herbert, Brian Herbert & Kevin J. Anderson"
+  },
+  "categories": {
+    "universe_basics": {
+      "description": "Conceptos fundamentales del universo Dune",
+      "entries": [
+        {
+          "term": "Imperio Padishah",
+          "definition": "El gobierno feudal interestelar liderado por el Emperador de Casa Corrino",
+          "components": ["Emperador", "Landsraad", "Spacing Guild", "Bene Gesserit"]
+        },
+        {
+          "term": "Butlerian Jihad",
+          "definition": "Guerra santa contra las máquinas pensantes, establece la prohibición de computadores",
+          "date": "~201 BG",
+          "dictum": "No harás máquina a imagen de la mente humana"
+        },
+        {
+          "term": "Calendario Imperial",
+          "definition": "Sistema de datación: BG (Antes del Gremio) y AG (Después del Gremio)",
+          "epoch_start": "1 AG = Fundación de la Spacing Guild"
+        },
+        {
+          "term": "Gran Convención",
+          "definition": "Ley feudal fundamental del Landsraad, regula guerras entre Casas"
+        }
+      ]
+    },
+    "factions": {
+      "description": "Facciones políticas y organizaciones del universo",
+      "entries": [
+        {
+          "id": "bene_gesserit",
+          "name": "Bene Gesserit",
+          "alias": ["La Hermandad", "Las Brujas"],
+          "type": "Organización religiosa, política y de espionaje",
+          "base": "Wallach IX",
+          "leader": "Hermana Principal",
+          "members": "~10,000",
+          "abilities": {
+            "the_voice": "Control vocal para influir en otros",
+            "prana_bindue": "Control total del cuerpo",
+            "other_memory": "Acceso a memorias de antepasados",
+            "weirding_way": "Arte marcial avanzado",
+            "immunity": "Inmunidad a venenos"
+          },
+          "goal": "Crear el Kwisatz Haderach y guiar a la humanidad"
+        },
+        {
+          "id": "spacing_guild",
+          "name": "Spacing Guild",
+          "alias": ["Gremio Espacial"],
+          "type": "Corporación monopolística",
+          "base": "Base móvil (naves heighliner)",
+          "monopoly": ["Viaje interestelar", "Banca interestelar"],
+          "key_role": "Guild Navigator",
+          "abilities": {
+            "folded_space": "Viaje instantáneo",
+            "prescience": "Presciencia limitada para navegación"
+          },
+          "resource_dependency": ["Melange"]
+        },
+        {
+          "id": "fremen",
+          "name": "Fremen",
+          "alias": ["Pueblo del Desierto"],
+          "type": "Cultura nativa",
+          "base": "Arrakis (deep desert)",
+          "leader_structure": {
+            "naib": "Líder del sietch",
+            "reverend_mother": "Guía espiritual",
+            "council": "Consejo de ancianos"
+          },
+          "social_structure": {
+            "sietch": "Comunidad/cueva",
+            "ichwan_bedwine": "Hermandad de todos los Fremen"
+          },
+          "beliefs": {
+            "water_is_life": "El agua es lo más sagrado",
+            "shai_hulud": "El gusano es sagrado, creador de la especia"
+          },
+          "rituals": {
+            "still": "Ritual de uso del agua",
+            "water_rings": "Anillos de agua como moneda",
+            "deathstill": "Extracción de agua del fallecido",
+            "spice_agony": "Iniciación de Reverend Mother"
+          }
+        },
+        {
+          "id": "sardaukar",
+          "name": "Sardaukar",
+          "type": "Fuerza militar de elite imperial",
+          "base": "Salusa Secundus",
+          "master": "Emperador Corrino"
+        }
+      ]
+    },
+    "houses": {
+      "description": "Casas nobles del universo",
+      "entries": [
+        {
+          "id": "corrino",
+          "name": "Casa Corrino",
+          "type": "Casa Imperial",
+          "seat": "Kaitain",
+          "symbol": "León Dorado",
+          "power": ["Sardaukar", "Trono Imperial"],
+          "emperors": ["Shaddam IV"]
+        },
+        {
+          "id": "atreides",
+          "name": "Casa Atreides",
+          "type": "Casa Major",
+          "original_seat": "Caladan",
+          "game_seat": "Arrakis (contexto)",
+          "symbol": "Halcón dorado",
+          "motto": "No existe el miedo, solo la disciplina",
+          "key_members": ["Duque Leto I", "Lady Jessica", "Paul Atreides", "Leto II"]
+        },
+        {
+          "id": "harkonnen",
+          "name": "Casa Harkonnen",
+          "type": "Casa Major",
+          "seat": "Giedi Prime",
+          "symbol": "Cuervo negro",
+          "motto": "El poder reside donde uno lo coloca",
+          "history": "600 años de ocupación brutal de Arrakis",
+          "key_members": ["Baron Vladimir Harkonnen", "Feyd-Rautha", "Rabban"]
+        },
+        {
+          "id": "fenring",
+          "name": "Casa Fenring",
+          "type": "Casa Menor influyente",
+          "seat": "Caladan (post-Atreides)",
+          "influence": "Más cercan al Emperador"
+        }
+      ]
+    },
+    "planets": {
+      "description": "Planetas significativos del universo",
+      "entries": [
+        {
+          "id": "arrakis",
+          "name": "Arrakis",
+          "alias": ["Planeta del Desierto", "Dune"],
+          "system": "Canopus",
+          "moons": ["Kuentspir", "Llaca"],
+          "significance": "Única fuente de melange",
+          "climate": "Desértico extremo",
+          "biomes": ["Gran Erg", "Broken Lands", "Cordilleras"],
+          "capital": "Arrakeen"
+        },
+        {
+          "id": "caladan",
+          "name": "Caladan",
+          "type": "Planeta oceánico",
+          "original_seat": "Casa Atreides",
+          "capital": "Arrakeen (Caladan)"
+        },
+        {
+          "id": "kaitain",
+          "name": "Kaitain",
+          "type": "Capital Imperial",
+          "seat": "Casa Corrino"
+        },
+        {
+          "id": "salusa_secundus",
+          "name": "Salusa Secundus",
+          "type": "Base militar",
+          "significance": "Entrenamiento de Sardaukar"
+        },
+        {
+          "id": "gieidi_prime",
+          "name": "Giedi Prime",
+          "type": "Planeta industrial",
+          "seat": "Casa Harkonnen",
+          "description": "Cielo permanentemente oscurecido"
+        },
+        {
+          "id": "wallach_ix",
+          "name": "Wallach IX",
+          "type": "Centro de entrenamiento",
+          "significance": "Escuela Madre Bene Gesserit"
+        }
+      ]
+    },
+    "resources": {
+      "description": "Recursos del universo Dune",
+      "entries": [
+        {
+          "id": "melange",
+          "name": "Melange",
+          "alias": ["Especia", "La Especia"],
+          "origin": "Arrakis (deep desert)",
+          "source": "Subproducto del ciclo vital de Shai-Hulud",
+          "properties": [
+            "Extiende la vida",
+            "Expande la consciencia",
+            "Habilita presciencia",
+            "Altamente adictiva"
+          ],
+          "uses": [
+            "Viaje interestelar (Guild Navigators)",
+            "Medicina geriátrica",
+            "Bene Gesserit training",
+            "Comercio"
+          ],
+          "value": "Más valioso del universo conocido"
+        },
+        {
+          "id": "solaris",
+          "name": "Solaris",
+          "type": "Energía",
+          "source": "Paneles solares helio-captadores",
+          "note": "Arrakis recibe doble radiación que la Tierra"
+        },
+        {
+          "id": "water",
+          "name": "Agua",
+          "type": "Recurso crítico",
+          "source": "Windtraps, Qanats, reciclaje",
+          "significance": "Más valioso que la especia en el desierto"
+        }
+      ]
+    },
+    "creatures": {
+      "description": "Fauna de Arrakis",
+      "entries": [
+        {
+          "id": "shai_hulud",
+          "name": "Shai-Hulud",
+          "alias": ["Gusano de Arena", "Sandworm"],
+          "size": "100-400+ metros",
+          "habitat": "Deep desert",
+          "behaviors": [
+            "Atraído por vibraciones rítmicas",
+            "Repelido por agua",
+            "Atraído por liblib (caminar sin ritmo)"
+          ],
+          "significance": [
+            "Sagrado para Fremen",
+            "Productor de melange",
+            "Apex predator"
+          ]
+        },
+        {
+          "id": "leviatan",
+          "name": "Leviatán",
+          "alias": ["Thopter"],
+          "type": "Insecto volador domesticable",
+          "use": "Transporte y combate"
+        },
+        {
+          "id": "sandtrout",
+          "name": "Sandtrout",
+          "type": "Larva de gusano",
+          "note": "Etapa del ciclo vital"
+        }
+      ]
+    },
+    "technology": {
+      "description": "Tecnología del universo Dune",
+      "entries": [
+        {
+          "id": "holtzman",
+          "name": "Efecto Holtzman",
+          "discoverer": "Científico Holtzman",
+          "applications": [
+            "Folded space (viaje instantáneo)",
+            "Shields (campos de fuerza)",
+            "Lasguns (armas de energía)"
+          ]
+        },
+        {
+          "id": "stillsuit",
+          "name": "Stillsuit",
+          "type": "Traje de filtración",
+          "function": "Recircular humedad corporal",
+          "water_loss": "~1 thimble por día"
+        },
+        {
+          "id": "windtrap",
+          "name": "Windtrap",
+          "type": "Captador de humedad",
+          "function": "Extraer agua del aire"
+        },
+        {
+          "id": "shield",
+          "name": "Shield",
+          "type": "Campo de fuerza personal",
+          "limitation": "Solo bloquea objetos rápidos"
+        }
+      ]
+    },
+    "terminology": {
+      "fremen": {
+        "sietch": "Comunidad Fremen en cueva",
+        "naib": "Líder del sietch",
+        "liblib": "Técnica para caminar sin atraer gusanos",
+        "crysknife": "Daga de hueso de gusano",
+        "amtal": "Combate ritual a muerte",
+        "sayyadina": "Sacerdotisa Fremen"
+      },
+      "political": {
+        "landsraad": "Consejo de Grandes Casas",
+        "great_convention": "Leyes feudales",
+        "choose": "Corporación comercial universal",
+        "great_house": "Casa Major noble",
+        "minor_house": "Casa Menor noble"
+      },
+      "organizations": {
+        "mentat": "Computador humano",
+        "reverend_mother": "Bene Gesserit de alto nivel",
+        "kwisatz_haderach": "Ser con acceso total a Other Memory",
+        "guild_navigator": "Piloto del Gremio Espacial"
+      }
+    }
+  },
+  "timeline": {
+    "butlerian_jihad": "~201 BG",
+    "battle_of_corrin": "108 BG",
+    "spacing_guild_founded": "1 AG",
+    "fremen_arrive_arrakis": "~500 AG",
+    "harkonnen_arrakis": "~9000 AG",
+    "duke_leto_arrives": "10191 AG",
+    "fremen_jihad": "10191 AG",
+    "leto_ii_rise": "10193 AG",
+    "leto_ii_death": "~12500 AG",
+    "post_dispersion": "12500+ AG (game context)"
+  },
+  "characters": {
+    "paul_atreides": {
+      "titles": ["Muad'Dib", "Mahdi", "Kwisatz Haderach", "Duque"],
+      "origin": "Casa Atreides",
+      "abilities": ["Presciencia", "The Voice", "Weirding Way", "Mentat training"]
+    },
+    "lady_jessica": {
+      "titles": ["Concubina", "Reverend Mother"],
+      "affiliation": "Bene Gesserit",
+      "abilities": ["The Voice", "Prana-Bindu", "Other Memory"]
+    },
+    "leto_ii": {
+      "titles": ["Dios Emperador", "El Tirano"],
+      "affiliation": "Casa Atreides",
+      "abilities": ["Presciencia total", "Inmunidad"],
+      "reign": "3,500+ años"
+    },
+    "stilgar": {
+      "titles": ["Naib"],
+      "affiliation": "Fremen (Sietch Tabr)",
+      "role": "Líder Fremen"
+    },
+    "emperor_shaddam_iv": {
+      "titles": ["81° Emperador"],
+      "affiliation": "Casa Corrino"
+    },
+    "baron_harkonnen": {
+      "titles": ["Baron"],
+      "affiliation": "Casa Harkonnen"
+    }
+  },
+  "game_mechanics": {
+    "player_house": "Casa Menor asignada a Arrakis",
+    "game_period": "Post-Dispersión",
+    "resource_types": ["Melange", "Solaris", "Agua", "Materiales", "Conocimiento"],
+    "structures": {
+      "enclaves": ["Aclimatación", "Exhibición", "Extracción"],
+      "installations": ["Panel solar", "Windtrap", "Trampa de arena", "Mina"]
+    },
+    "rounds": "Cada ronda = 1 ciclo de operación",
+    "visitors": ["Diplomáticos", "Comerciantes", "Bene Gesserit", "Guild Navigator", "Fremen", "Smugglers"]
+  }
+}
